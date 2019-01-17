@@ -9,13 +9,13 @@ namespace OneToMany.Models
     public class Student
     {
 
-        //public int StudentId { get; set; }
-        //public string StudentName { get; set; }
-        ///// <summary>
-        ///// 1.relationship between the Students and Grades table in the database, 
-        ///// where the Students table includes foreign key Grade_GradeId
-        ///// </summary>
-        //// public Grade Grade { get; set; }
+        public int StudentId { get; set; }
+        public string StudentName { get; set; }
+        /// <summary>
+        /// 1.relationship between the Students and Grades table in the database, 
+        /// where the Students table includes foreign key Grade_GradeId
+        /// </summary>
+         public Grade Grade { get; set; }
 
 
         /////<summary>
@@ -29,11 +29,11 @@ namespace OneToMany.Models
 
 
         //One-to-Many Relationship using Fluent API
-        public int Id { get; set; }
-        public string Name { get; set; }
+        //public int Id { get; set; }
+        //public string Name { get; set; }
 
-        public int CurrentGradeId { get; set; }
-        public Grade CurrentGrade { get; set; }
+        //public int CurrentGradeId { get; set; }
+        //public Grade CurrentGrade { get; set; }
 
 
 
